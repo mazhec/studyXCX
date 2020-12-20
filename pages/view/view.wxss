@@ -1,0 +1,15 @@
+/* pages/view/view.wxss */
+.box {
+  background-color: red;
+}
+
+.hover-class {
+  width: 100px;
+  height: 100px;
+  background-color: purple;
+}
+
+.active {
+  background-color: pink;
+  color: #fff;
+}

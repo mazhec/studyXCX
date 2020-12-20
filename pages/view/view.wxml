@@ -1,0 +1,13 @@
+<!--pages/view/view.wxml-->
+<!-- <text>pages/view/view.wxml</text> -->
+<!-- 1.view 的基本使用 -->
+<view class="box">曹德</view>
+<view>姬大德</view>
+
+<!-- 2.hover-class -->
+<view hover-start-time="1000" hover-class="active">hover-class</view>
+
+<!-- 2.hover-stop-propagation -->
+<view hover-start-time="1000" hover-class="active" class="hover-class">hover-class
+  <view hover-stop-propagation>123</view>
+</view>

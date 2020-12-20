@@ -1,0 +1,18 @@
+<!--pages/image/image.wxml-->
+<!-- <text>pages/image/image.wxml</text> -->
+<!-- 1.image 的基本使用 -->
+<image src="../../assets/test/1.jpg" />
+<image src="/assets/test/2.jpg" />
+<image src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg" />
+
+<!-- 2.相册图片 -->
+<button bindtap="handleChoseAlbum">选中图片</button>
+<image src="{{src}}" />
+
+<!-- 3.bindload: 监听图片加载完成 -->
+<view>------------------</view>
+
+<image wx:for="{{1}}" wx:key="index" lazy-load bindload="handleImageLoad" src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg" />
+
+<!-- 4.show-menu-by-longpress -->
+<image show-menu-by-longpress src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg" />
