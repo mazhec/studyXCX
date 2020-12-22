@@ -1,0 +1,91 @@
+/* pages/wxss/wxss.wxss */
+@import "./style/box.wxss";
+@import './style/container.wxss';
+@import './style/weui-searchbar.wxss';
+
+.box {
+  color: blue;
+  font-size: 30px;
+}
+
+/* .box1 {
+  width: 100px;
+  height: 100px;
+  background: orange;
+}
+
+.box2 {
+  width: 200rpx;
+  height: 200rpx;
+  background: purple;
+} */
+
+/* .container1 {
+  font-size: 32px;
+}
+
+.container2 {
+  font-size: 64rpx;
+} */
+
+.weui-icon-search {
+  -webkit-mask-image: url(data:image/svg+xml,%3Csvg%20width%3D%2224%22%20height%3D%2224%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M16.31%2015.561l4.114%204.115-.848.848-4.123-4.123a7%207%200%2011.857-.84zM16.8%2011a5.8%205.8%200%2010-11.6%200%205.8%205.8%200%200011.6%200z%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E);
+  mask-image: url(data:image/svg+xml,%3Csvg%20width%3D%2224%22%20height%3D%2224%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M16.31%2015.561l4.114%204.115-.848.848-4.123-4.123a7%207%200%2011.857-.84zM16.8%2011a5.8%205.8%200%2010-11.6%200%205.8%205.8%200%200011.6%200z%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E);
+}
+
+[class^=weui-icon-] {
+  display: inline-block;
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+  -webkit-mask-position: 50% 50%;
+  mask-position: 50% 50%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100%;
+  mask-size: 100%;
+  background-color: currentColor;
+}
+
+.weui-search-bar .weui-search-bar__box .weui-icon-clear {
+  display: block;
+}
+
+.weui-search-bar__box .weui-icon-clear {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-top: -16px;
+  padding: 8px;
+  width: 16px;
+  height: 16px;
+  -webkit-mask-size: 16px;
+  mask-size: 16px;
+}
+
+.weui-search-bar__input:not(:valid)+.weui-icon-clear {
+  display: none;
+}
+
+.weui-icon-clear {
+  color: var(--weui-FG-2);
+}
+
+.weui-icon-clear {
+  -webkit-mask-image: url(data:image/svg+xml,%3Csvg%20width%3D%2224%22%20height%3D%2224%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M13.06%2012l3.006-3.005-1.06-1.06L12%2010.938%208.995%207.934l-1.06%201.06L10.938%2012l-3.005%203.005%201.06%201.06L12%2013.062l3.005%203.005%201.06-1.06L13.062%2012zM12%2022C6.477%2022%202%2017.523%202%2012S6.477%202%2012%202s10%204.477%2010%2010-4.477%2010-10%2010z%22%2F%3E%3C%2Fsvg%3E);
+  mask-image: url(data:image/svg+xml,%3Csvg%20width%3D%2224%22%20height%3D%2224%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M13.06%2012l3.006-3.005-1.06-1.06L12%2010.938%208.995%207.934l-1.06%201.06L10.938%2012l-3.005%203.005%201.06%201.06L12%2013.062l3.005%203.005%201.06-1.06L13.062%2012zM12%2022C6.477%2022%202%2017.523%202%2012S6.477%202%2012%202s10%204.477%2010%2010-4.477%2010-10%2010z%22%2F%3E%3C%2Fsvg%3E);
+}
+
+[class^=weui-icon-] {
+  display: inline-block;
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+  -webkit-mask-position: 50% 50%;
+  mask-position: 50% 50%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100%;
+  mask-size: 100%;
+  background-color: currentColor;
+}

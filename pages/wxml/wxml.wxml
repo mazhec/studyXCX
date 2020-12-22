@@ -1,0 +1,75 @@
+<!--pages/wxml/wxml.wxml-->
+<!-- 1.wxml 的格式 -->
+<view>{{message}}</view>
+
+<view>{{firstname}} {{lastname}}</view>
+
+<view>{{firstname + ' ' +lastname}}</view>
+
+<view>{{age >= 18 ? '成年人' : '未成年人'}}</view>
+
+<view>{{nowTime}}</view>
+
+<button size="mini" bindtap="handleChangeColor">切换颜色</button>
+<view class="box {{isActive ? 'active' : ''}}">绑定属性</view>
+
+<!-- <map latitude="116.11" latitude="39.6"></map> -->
+
+<view>--------------条件判断-------------</view>
+
+<button size="mini" bindtap="handleIsShow">显示隐藏</button>
+<view wx:if="{{isShow}}">啦啦啦</view>
+
+<!-- wx:elif/wx:else -->
+<button size="mini" bindtap="handleIncrement">分数递增6</button>
+<view wx:if="{{score >= 90}}">优秀</view>
+<view wx:elif="{{score >= 80}}">良好</view>
+<view wx:elif="{{score >= 60}}">及格</view>
+<view wx:else>不及格</view>
+
+<!-- wx:if和hidden在隐藏组件时有什么区别 -->
+<view wx:if="{{false}}">我是通过wx:if控制的内容</view>
+<view hidden>我是通过hidden控制的内容</view>
+
+<view>-----------列表渲染----------</view>
+
+<!-- wx:for基础 -->
+<!-- <view wx:for="{{['abc', 'asd', ';lkj']}}" wx:key="index">{{item}}</view>
+
+<view wx:for="义薄云天" wx:key="index">{{item}}</view> -->
+
+<!-- item、index 起名字 -->
+<!-- <view wx:for="{{movies}}" wx:for-item="movie" wx:key="index">{{movie}}</view>
+
+<block wx:for="{{num}}" wx:for-item="inneritem">
+  <block wx:for="{{inneritem}}">
+    <view>{{item}}</view>
+  </block>
+</block> -->
+
+<!-- <view wx:for="{{letters}}" wx:key="index">{{item}}</view> -->
+
+<!-- template -->
+<!--  -->
+
+<!-- <template name="contentItem">
+  <button size="mini">{{buttonText}}</button>
+  <view>{{content}}</view>
+</template> -->
+
+<import src="/wxml/template.wxml" />
+<import src="/wxml/abc.wxml" />
+
+<!-- <include src="/wxml/template.wxml"/> -->
+
+<template is="contentItem" data="{{buttonText: '按钮', content: '义薄云天'}}" />
+
+<template is="contentItem" data="{{buttonText: '拉斯克奖', content: '拉斯卡进店'}}" />
+
+<template is="contentItem" data="{{buttonText: '奥术大师多', content: '爱我的所'}}" />
+
+<template is="contentItem" data="{{buttonText: '奥德赛无', content: '电饭锅'}}" />
+
+<template is="abc" />
+
+<view>{{numToFixed(29.666666)}}</view>

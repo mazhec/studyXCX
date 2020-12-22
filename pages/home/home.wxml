@@ -1,3 +1,12 @@
 <!--pages/home/home.wxml-->
+<include src="/wxml/header.wxml"/>
 <text class="title">Hello World</text>
 <button size="mini">按钮</button>
+
+<!-- 1.hidden 属性 -->
+<view hidden>义薄云天</view>
+
+<import src="/wxml/template.wxml"/>
+
+<template is="contentItem" data="{{buttonText: '按钮', content: '阿施蒂利克'}}" />
+<include src="/wxml/footer.wxml"/>

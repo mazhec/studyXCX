@@ -1,0 +1,10 @@
+@import '/style/btn.wxss';
+.global {
+  color: purple;
+  font-size: 30px;
+}
+
+.content {
+  background: purple !important;
+  font-size: 30px;
+}

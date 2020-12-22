@@ -1,0 +1,28 @@
+<!--pages/wxs/wxs.wxml-->
+<!-- wxs 的定义方式 -->
+<!-- <wxs module="info">
+  // 代码
+
+  var message = 'Hello World'
+  var name = '轮回王'
+
+  var sum = function(num1, num2) {
+    return num1 + num2
+  }
+  module.exports = {
+    message: message,
+    name: name,
+    sum: sum
+  }
+</wxs> -->
+
+<wxs src="../../wxs/info.wxs" module="info" />
+
+<view>{{info.message}}</view>
+<view>{{info.name}}</view>
+<view>{{info.sum(2, 3)}}</view>
+
+<wxs src="../../wxs/format.wxs" module="format" />
+<view>{{format.priceFormat(price)}}</view>
+<view>{{format.dateFormat(time, 'yyyy-MM-dd hh:mm:ss')}}</view>
+<view>{{time}}</view>
