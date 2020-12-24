@@ -1,0 +1,9 @@
+<!--components/m-tab-control/m-tab-control.wxml-->
+<view class="tab-control">
+  <block wx:for="{{titles}}" wx:key="index">
+    <view class="tab-item {{index === currentIndex ? 'active' : ''}}" bindtap="handleChangeTitle" data-index="{{index}}">{{item}}</view>
+  </block>
+  <!-- <view class="tab-item">流行</view>
+  <view class="tab-item">新款</view>
+  <view class="tab-item">精选</view> -->
+</view>

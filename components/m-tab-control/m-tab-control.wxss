@@ -1,0 +1,17 @@
+/* components/m-tab-control/m-tab-control.wxss */
+
+.tab-control {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.tab-item {
+  height: 88rpx;
+  line-height: 88rpx;
+  padding: 0 20rpx;
+}
+
+.active {
+  color: red;
+  border-bottom: 4px solid red;
+}

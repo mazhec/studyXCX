@@ -1,3 +1,54 @@
 <!--pages/home/home.wxml-->
 <text class="title">Hello World</text>
 <button size="mini">按钮</button>
+
+<!-- 1.自定义组件基本使用 -->
+<!-- <my-cpn/> -->
+
+<!-- 2.自定义组件的样式细节 -->
+<!-- <my-style/> -->
+
+
+<!-- 给自定义组件传递数据/样式 -->
+<my-prop title="敦厚纯善" titleclass="red" />
+<my-prop title="义薄云天" titleclass="blue" />
+<my-prop titleclass="purple" />
+
+<!-- 组件内部发出事件 -->
+<view>当前计数：{{counter}}</view>
+<my-event bindincrement="hangleIncrement" />
+
+<!-- tab-control的练习 -->
+<m-tab-control bind:itemClick="handleItemClick" titles="{{['流行', '新款', '精选']}}" />
+
+<!-- 直接选中组件修改数据/调用方法 -->
+<button size="mini" bindtap="handleIncrementCpn">修改组件内的数据</button>
+<my-sel class="sel_class" id="sel_id" />
+
+<!-- 单个插槽的使用 -->
+<my-slot>
+  <button size="mini">我是插入的按钮</button>
+</my-slot>
+
+<my-slot>
+  <text>义薄云天</text>
+</my-slot>
+
+<my-slot>
+  <image mode="aspectFit" src="https://i0.hdslb.com/bfs/sycp/creative_img/202012/9b1e3a45774ae7fdf40c91efa3bc63bb.jpg@880w_388h_1c_95q" />
+</my-slot>
+
+<my-slot>
+  <slider value="50" />
+</my-slot>
+
+<!-- 多个插槽的使用 -->
+
+<block wx:if="{{isShow}}">
+  <my-multipie-slot>
+    <view slot="center">slot1</view>
+    <slider slot="left" />
+  </my-multipie-slot>
+</block>
+
+<button bindtap="handleIsShow">控制显示和隐藏</button>

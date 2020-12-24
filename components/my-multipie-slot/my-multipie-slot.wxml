@@ -1,0 +1,12 @@
+<!--components/my-multipie-slot/my-multipie-slot.wxml-->
+<view>我是my-multipie-slot组件的开始</view>
+<view class="slot1">
+  <slot name="left" />
+</view>
+<view class="slot2">
+  <slot name="center" />
+</view>
+<view class="slot3">
+  <slot name="right" />
+</view>
+<view>我是my-multipie-slot组件的结尾</view>
