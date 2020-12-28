@@ -1,18 +1,11 @@
-// pages/home/home.js
+// pages/comment/comment.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    title: '义薄云天'
-  },
 
-  handleToDetail() {
-    console.log(this)
-    wx.navigateTo({
-      url: '/pages/detail/detail?title=义薄云天',
-    })
   },
 
   /**
